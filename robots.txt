@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pupsik210oo-cpu.github.io/mapipp-site/sitemap.xml
