@@ -1711,7 +1711,7 @@ function fitDistrict() {
 ══════════════════════════════════════════════════════════ */
 let routing = null, userLoc = null;
 function buildRoute(dLat, dLng, dName) {
-  if (!userLoc) { locateUser(true, () => buildRoute(dLat,dLng,dName)); return; }
+  if (!userLoc) { locateUser(false, () => buildRoute(dLat,dLng,dName)); return; }
   clearRoute();
   routing = L.Routing.control({
     waypoints:[L.latLng(userLoc[0],userLoc[1]), L.latLng(dLat,dLng)],
